@@ -68,3 +68,27 @@ with open("decrypted.zip", 'wb') as file:
     file.write(c)
 ```
 So erhalten wir nun die entschlüsselte `decrypted.zip`. Diese ist nun mit einem Passwort geschützt, welches geknackt werden muss.
+
+**Schritt 2 - Zip Passwort knacken**
+
+Die Zip ist sehr einfach zu entschlüsseln. Es muss lediglich mit hashcat der hash der Zip Datei mit der klassischen *rockyou.txt* wordlist abgeglichen werden. Wie man einfach mit Hashcat auf Zip Dateien Wordlistattacken durchführt ist in vielen Tutorials beschrieben.
+
+Wir erhalten das Passwort:
+`roneisha2209`
+
+Geben wir das Passwort für die Zip Datei ein, erhalten wir die Dateien `verwahrgelass.kdbx` und `KeePass.DMP`.
+
+
+**Schritt 3 - KeePass Passwort knacken**
+Auch hier muss ganz einfach die Keepass Datei gebruteforced werden, wie es in vielen Tutorials beschrieben ist. Das Passwort befindet sich erneut auf der *rockyou.txt*.
+
+Wir erhalten das Passwort:
+`spongebob123`
+
+(Die `KeePass.DMP` ist irrelevant und soll wahrscheinlich auf eine falsche Fährte führen :) )
+
+**Die KeePass Datei**
+
+In der Datei bedindet sich der Link: `https://bnd.bund.de/w4rme-s0cken-4-dec0der`
+
+Mit dem Lösungswort: `BND{M3rcH=c001!}`
