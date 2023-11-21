@@ -80,6 +80,7 @@ Geben wir das Passwort für die Zip Datei ein, erhalten wir die Dateien `verwahr
 
 
 **Schritt 3 - KeePass Passwort knacken**
+
 Auch hier muss ganz einfach die Keepass Datei gebruteforced werden, wie es in vielen Tutorials beschrieben ist. Das Passwort befindet sich erneut auf der *rockyou.txt*.
 
 Wir erhalten das Passwort:
@@ -92,3 +93,7 @@ Wir erhalten das Passwort:
 In der Datei bedindet sich der Link: `https://bnd.bund.de/w4rme-s0cken-4-dec0der`
 
 Mit dem Lösungswort: `BND{M3rcH=c001!}`
+
+Zudem die Nachricht:
+
+﻿`Herzlichen Glückwunsch! Nutze das Losungswort (siehe Password-Feld) auf der steng geheimen Webseite https://bnd.bund.de/w4rme-s0cken-4-dec0der und gewinne mit etwas Glück BND-Merch :)`
