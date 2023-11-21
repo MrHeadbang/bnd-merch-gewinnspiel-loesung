@@ -56,4 +56,15 @@ print(bytes(key))
 ```
 Output: `b'!Rv\xbc'`
 
-
+Mit diesem Key können wir dann einfach mit XOR entschlüsseln.
+```python
+key = b'!Rv\xbc'
+c = bytearray()
+s = 4
+for i in range(0, len(content), s):
+    b = content[i:i+s]
+    c.extend(bytearray(b[i] ^ key[i % 4] for i in range(len(b))))
+with open("decrypted.zip", 'wb') as file:
+    file.write(c)
+```
+So erhalten wir nun die entschlüsselte `decrypted.zip`. Diese ist nun mit einem Passwort geschützt, welches geknackt werden muss.
